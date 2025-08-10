@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Google Auth</title>
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+</head>
+<body>
+  <h1>Google orqali kirish</h1>
+  
+  <div id="auth-container">
+    <button id="googleSignIn">Google bilan kirish</button>
+    <button id="signOut" style="display: none;">Chiqish</button>
+  </div>
+  
+  <div id="user-info" style="display: none;">
+    <h2>Foydalanuvchi ma'lumotlari</h2>
+    <p id="user-name"></p>
+    <p id="user-email"></p>
+    <img id="user-photo" width="100" height="100">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
